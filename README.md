@@ -138,18 +138,24 @@
 
 Приложение состоит из следующих страниц:
 
-| Файл                    | Назначение                                  |
-|------------------------|----------------------------------------------|
-| `app.py`               | Главный файл Streamlit-приложения            |
-| `analysis_and_model.py`| Анализ данных и предсказания модели          |
-| `data_analysis.py`     | Исследовательский анализ данных              |
-| `presentation.py`      | Презентация проекта                          |
-
-Интерфейс приложения:
-
-![alt text](1.3_streamlit_analysis_model_prediction_form.jpg)
+| 📄 Файл                                            | 📝 Назначение                                |
+|----------------------------------------------------|-----------------------------------------------|
+| [`app.py`](app.py)                                 | Главный файл Streamlit-приложения             |
+| [`analysis_and_model.py`](analysis_and_model.py)   | Анализ данных и предсказания модели           |
+| [`data_analysis.py`](data_analysis.py)             | Исследовательский анализ данных               |
+| [`presentation.py`](presentation.py)               | Презентация проекта                           |
 
 ---
+
+### :film_strip: Демонстрация интерфейса приложения
+
+<div align="center"> <video width="100%" height="auto" controls>
+<source src="demo/streamlit_interface/streamlit_interface.mp4" type="video/mp4">
+Ваш браузер не поддерживает встроенное видео. Вы можете <a href="demo/streamlit_interface/streamlit_interface.mp4">скачать видео по ссылке</a>.
+</video>
+</div>
+
+:link: **Ссылка на видео:** [демонстрация интерфейса приложения](demo/streamlit_interface/streamlit_interface.mp4)
 
 ---
 
@@ -203,11 +209,23 @@ docker-compose up --build
 
 **1. Клонировать репозиторий**
 
-(см. шаг 1 Docker-варианта)
+```bash
+git clone https://github.com/space13pirate/predictive_maintenance_project.git
+
+cd predictive_maintenance_project
+```
 
 **2. Создать файл .env с ключами ClearML**
 
-(см. шаг 2 Docker-варианта)
+📄 Пример .env файла:
+
+```
+CLEARML_WEB_HOST=https://app.clear.ml/
+CLEARML_API_HOST=https://api.clear.ml
+CLEARML_FILES_HOST=https://files.clear.ml
+CLEARML_API_ACCESS_KEY=ваш_ключ_доступа
+CLEARML_API_SECRET_KEY=ваш_секретный_ключ
+```
 
 **3. Установить зависимости**
 
@@ -219,3 +237,17 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+После запуска приложение будет доступно по адресу 👉 http://localhost:8501
+
+---
+
+### :film_projector: Демонстрация запуска проекта (Docker и локальный)
+
+<div align="center"> <video width="100%" height="auto" controls>
+<source src="demo/project_launch_docker_and_local.mp4" type="video/mp4">
+Ваш браузер не поддерживает встроенное видео. Вы можете <a href="demo/project_launch_docker_and_local.mp4">скачать видео по ссылке</a>.
+</video>
+</div>
+
+:link: **Ссылка на видео:** [запуск проекта (Docker + локально)](demo/project_launch_docker_and_local.mp4)
