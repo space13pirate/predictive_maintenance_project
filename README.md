@@ -149,11 +149,7 @@
 
 ### :film_strip: Демонстрация интерфейса приложения
 
-<div align="center"> <video width="100%" height="auto" controls>
-<source src="demo/streamlit_interface/streamlit_interface.mp4" type="video/mp4">
-Ваш браузер не поддерживает встроенное видео. Вы можете <a href="demo/streamlit_interface/streamlit_interface.mp4">скачать видео по ссылке</a>.
-</video>
-</div>
+<video src="demo/streamlit_interface/streamlit_interface.mp4" controls width="100%"></video>
 
 :link: **Ссылка на видео:** [демонстрация интерфейса приложения](demo/streamlit_interface/streamlit_interface.mp4)
 
@@ -244,10 +240,6 @@ streamlit run app.py
 
 ### :film_projector: Демонстрация запуска проекта (Docker и локальный)
 
-<div align="center"> <video width="100%" height="auto" controls>
-<source src="demo/project_launch_docker_and_local.mp4" type="video/mp4">
-Ваш браузер не поддерживает встроенное видео. Вы можете <a href="demo/project_launch_docker_and_local.mp4">скачать видео по ссылке</a>.
-</video>
-</div>
+<video src="demo/project_launch_docker_and_local.mp4" controls width="100%"></video>
 
 :link: **Ссылка на видео:** [запуск проекта (Docker + локально)](demo/project_launch_docker_and_local.mp4)
