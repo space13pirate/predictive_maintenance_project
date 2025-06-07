@@ -1,0 +1,32 @@
+# Игнорировать виртуальные окружения
+venv/
+.env/
+*.env
+
+# Исключение pycache
+__pycache__/
+*.py[cod]
+*.so
+
+# Исключение Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Исключить IDE-файлы
+.vscode/
+.idea/
+*.log
+
+# Исключение Git и временных файлов
+.git/
+.gitignore
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Исключение лишних данных
+data/
+experiments/
+demo/
