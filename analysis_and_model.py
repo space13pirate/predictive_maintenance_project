@@ -48,8 +48,7 @@ def analysis_and_model_page():
         )
 
         try:
-            
-            model_cat = Model(model_id="eb439e03980d499298e7b4180eea8877")  # Получение объекта модели по ID           
+            model_cat = Model(model_id="27871909cd884d18abead8cce9ba8e43")  # Получение объекта модели по ID           
             local_cat_path = model_cat.get_local_copy()                     # Загрузка локальной копии            
             cat_model = joblib.load(local_cat_path)                         # Загрузка модели с помощью joblib
 
@@ -70,7 +69,7 @@ def analysis_and_model_page():
     # 3. Мультиклассовая классификация (XGBoost)
     st.subheader(":gear: Мультиклассовая классификация (XGBoost)")
     try:
-        model_xgb = Model(model_id="91195e8bb2a042409dfa0611e83a5fb0")
+        model_xgb = Model(model_id="6efcaeca84a046ffbb2449f074a24b62")
         local_xgb_path = model_xgb.get_local_copy()
         xgb_model = joblib.load(local_xgb_path)
 
