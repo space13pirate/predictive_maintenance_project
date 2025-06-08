@@ -149,7 +149,7 @@
 
 ### :film_strip: Демонстрация интерфейса приложения
 
-<video src="demo/streamlit_interface/streamlit_interface.mp4" controls width="100%"></video>
+![Интерфейс Streamlit](demo/streamlit_interface/1.3_streamlit_analysis_model_prediction_form.jpg)
 
 :link: **Ссылка на видео:** [демонстрация интерфейса приложения](demo/streamlit_interface/streamlit_interface.mp4)
 
@@ -165,27 +165,63 @@
 
 Позволяет изолированно и быстро развернуть приложение без необходимости локальной настройки среды.
 
-#### Шаги:
+#### **0. Перейти в домашнюю директорию** (если необходимо)
 
-**1. Перейти в домашнюю директорию (если необходимо)**
+* В **cmd.exe** (классической командной строке Windows):
+
+```cmd
+cd %USERPROFILE%
+```
+
+* В **PowerShell** (которая стала стандартной оболочкой Windows):
+
+```powershell
+cd ~
+```
+
+или
+
+```powershell
+Set-Location ~
+```
+
+* В **Unix-подобных оболочках** (например, Git Bash, WSL, Linux, macOS):
 
 ```bash
 cd ~
 ```
 
-**2. Клонировать репозиторий с GitHub**
+#### **1. Клонировать репозиторий с GitHub**
 
-```bash
+```cmd
 git clone https://github.com/space13pirate/predictive_maintenance_project.git
+```
 
+Перейти в папку проекта:
+
+```cmd
 cd predictive_maintenance_project
 ```
 
 :file_folder: Теперь мы находимся в папке проекта.
 
-**3. Создать файл .env с ключами ClearML**
+#### **2. Создать файл .env с ключами ClearML**
 
-В корне проекта уже есть шаблон `.env.example`. Нужно переименовать его в `.env`:
+В корне проекта уже есть шаблон `.env.example`. Нужно переименовать его в `.env`.
+
+* В **cmd.exe**:
+
+```cmd
+rename .env.example .env
+```
+
+* В **PowerShell**:
+
+```powershell
+Rename-Item -Path .env.example -NewName .env
+```
+
+* В **Unix-подобных оболочках**:
 
 ```bash
 mv .env.example .env
@@ -193,7 +229,7 @@ mv .env.example .env
 
 Нужно открыть `.env` и вставить свои ключи доступа ClearML:
 
-```bash
+```env
 CLEARML_WEB_HOST=https://app.clear.ml/
 CLEARML_API_HOST=https://api.clear.ml
 CLEARML_FILES_HOST=https://files.clear.ml
@@ -203,9 +239,9 @@ CLEARML_API_SECRET_KEY=ваш_секретный_ключ
 
 :closed_lock_with_key: Эти ключи можно найти в личном кабинете [ClearML](https://app.clear.ml) ([Settings → Workspace](https://app.clear.ml/settings/workspace-configuration) → Create New Credentials).
 
-**4. Запустить проект**
+#### **3. Запустить проект**
 
-```
+```cmd
 docker-compose up --build
 ```
 
@@ -215,8 +251,6 @@ docker-compose up --build
 
 ### :film_projector: Демонстрация запуска проекта (Docker)
 
-<video src="demo/project_launch_docker" controls width="100%"></video>
-
 :link: **Ссылка на видео:** [запуск проекта (Docker)](demo/project_launch_docker.mp4)
 
 ---
@@ -225,27 +259,63 @@ docker-compose up --build
 
 Подходит для отладки, разработки и запуска на локальной машине с Python.
 
-#### Шаги:
+#### **0. Перейти в домашнюю директорию** (если необходимо)
 
-**1. Перейти в домашнюю директорию (если необходимо)**
+* В **cmd.exe** (классической командной строке Windows):
+
+```cmd
+cd %USERPROFILE%
+```
+
+* В **PowerShell** (которая стала стандартной оболочкой Windows):
+
+```powershell
+cd ~
+```
+
+или
+
+```powershell
+Set-Location ~
+```
+
+* В **Unix-подобных оболочках** (например, Git Bash, WSL, Linux, macOS):
 
 ```bash
 cd ~
 ```
 
-**2. Клонировать репозиторий с GitHub**
+#### **1. Клонировать репозиторий с GitHub**
 
-```bash
+```cmd
 git clone https://github.com/space13pirate/predictive_maintenance_project.git
+```
 
+Перейти в папку проекта:
+
+```cmd
 cd predictive_maintenance_project
 ```
 
 :file_folder: Теперь мы находимся в папке проекта.
 
-**3. Создать файл .env с ключами ClearML**
+#### **2. Создать файл .env с ключами ClearML**
 
-В корне проекта уже есть шаблон `.env.example`. Нужно переименовать его в `.env`:
+В корне проекта уже есть шаблон `.env.example`. Нужно переименовать его в `.env`.
+
+* В **cmd.exe**:
+
+```cmd
+rename .env.example .env
+```
+
+* В **PowerShell**:
+
+```powershell
+Rename-Item -Path .env.example -NewName .env
+```
+
+* В **Unix-подобных оболочках**:
 
 ```bash
 mv .env.example .env
@@ -253,7 +323,7 @@ mv .env.example .env
 
 Нужно открыть `.env` и вставить свои ключи доступа ClearML:
 
-```bash
+```env
 CLEARML_WEB_HOST=https://app.clear.ml/
 CLEARML_API_HOST=https://api.clear.ml
 CLEARML_FILES_HOST=https://files.clear.ml
@@ -263,40 +333,65 @@ CLEARML_API_SECRET_KEY=ваш_секретный_ключ
 
 :closed_lock_with_key: Эти ключи можно найти в личном кабинете [ClearML](https://app.clear.ml) ([Settings → Workspace](https://app.clear.ml/settings/workspace-configuration) → Create New Credentials).
 
-**4. Создать и активировать виртуальное окружение**
+#### **3. Создать и активировать виртуальное окружение**
 
-На Windows (PowerShell):
+* В **cmd.exe**:
 
-```bash
+```cmd
 python -m venv venv
-source venv/Scripts/activate
+venv\Scripts\activate.bat
 ```
 
-На Linux/macOS (bash/zsh):
+* В **PowerShell**:
+
+```powershell
+python -m venv venv
+venv\Scripts\Activate.ps1
+```
+
+Если команда активации не работает, нужно включить выполнение скриптов:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+Затем снова активировать:
+
+```powershell
+venv\Scripts\Activate.ps1
+```
+
+* В **Unix-подобных оболочках**:
 
 ```bash
-python3 -m venv venv
+python3 -m venv venv (или python)
 source venv/bin/activate
 ```
 
 После этого в командной строке появится префикс (venv) – окружение активно.
 
-**5. Установить зависимости проекта**
+**Деактивация окружения** (везде одинаково)**:**
 
-```bash
-pip install --upgrade pip         # необязательно
+```cmd
+deactivate
+```
+
+#### **4. Установить зависимости проекта**
+
+```cmd
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-**6. Запустить Streamlit-приложение**
+#### **5. Запустить Streamlit-приложение**
 
-```bash
+```cmd
 streamlit run app.py
 ```
 
 Если streamlit не найден:
 
-```bash
+```cmd
 python -m streamlit run app.py
 ```
 
@@ -305,7 +400,5 @@ python -m streamlit run app.py
 ---
 
 ### :film_projector: Демонстрация запуска проекта (локально)
-
-<video src="demo/project_launch_local.mp4" controls width="100%"></video>
 
 :link: **Ссылка на видео:** [запуск проекта (локально)](demo/project_launch_local.mp4)
